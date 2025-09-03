@@ -1,0 +1,10 @@
+body {
+    background-color: slategray;
+}
+
+#container {
+    background-color: white;
+    width: 950px;
+    border: 2px solid #0603a1d3;
+    margin: 20px auto;
+}
