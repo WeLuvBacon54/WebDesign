@@ -105,6 +105,12 @@ footer a:hover {
     }
 }
 
+img {
+            display: block;
+            width: 500px;
+            height: 400px;
+        }
+        
 /* Additional styles can be added as needed */
 
 /* End of styles.css */
