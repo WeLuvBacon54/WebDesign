@@ -16,3 +16,95 @@ img {
     border-radius: 20px;
 }
 
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Handwriting', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: lightblue;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #container {
+        width: 70%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 9px 18px;
+    }
+}
+
+/* Additional styles can be added as needed */
+
+/* End of styles.css */
