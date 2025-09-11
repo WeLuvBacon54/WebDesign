@@ -30,6 +30,7 @@ header h1 {
 header {
     text-align: center;
     padding: 40px;
+    border-bottom: #333333 2px solid;
 }
 
 p {
@@ -89,3 +90,52 @@ img {
                 height: 450px;
             }
         }
+
+nav {
+    text-align: center;
+     border-bottom: #333333 2px solid;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    background-color: lightslategray;
+    color: white;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: #333333 2px solid;
+}
+main h2 {
+    text-align: center;
+    color: #220759;
+    font-family:serif;
+}
+.multi_column {
+    display: flex;
+}
+
+section, aside {
+    background-color: lightseagreen;
+    border-radius: 5px;
+    border: #333333 2px solid;
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+section{
+    width: 75%;
+}
+
+aside {
+    width: 25%;
+}
