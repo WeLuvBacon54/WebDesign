@@ -78,6 +78,11 @@ footer {
     text-align: center;
 }
 
+.multi_col {
+    width: 100%;
+    float: left;
+}
+
 /* Tablet Styles */
 
 @media (min-width: 767px) {
@@ -103,8 +108,9 @@ footer {
         margin-top: 10px;
     }
 
-    .multi-column {
+    .multi_col {
         width: 65%;
+
     }
 }
 
@@ -118,5 +124,9 @@ footer {
 
     .gallery {
         display: flex;
+    }
+
+    .multi_col {
+        width: 70%;
     }
 }
