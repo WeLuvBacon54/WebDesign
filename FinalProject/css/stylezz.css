@@ -12,6 +12,22 @@ a:hover {
     text-decoration: black;
 }
 
+.img_style {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    box-shadow: #000000 5px 5px 15px;
+    border: 4px solid #000000;
+    border-radius: 10px;
+    width: 100%;
+}
+
 
 /*desktop styles*/
 
@@ -39,13 +55,6 @@ a:hover {
 #multi_col > aside {
     flex: 1 1 300px;
     min-width: 250px;
-}
-
-.img_style {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 10px;
 }
 
 header h1 {
@@ -78,6 +87,8 @@ nav li a {
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: background 0.2s;
+    overflow-wrap: break-word;
+    text-align: center;
 }
 
 nav ul li a:hover
