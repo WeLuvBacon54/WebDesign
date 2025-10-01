@@ -1,7 +1,10 @@
 /*global styles*/
 
 body {
-    background-color: rgb(116, 79, 123);
+  background-color: rgb(116, 79, 123);
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a{
