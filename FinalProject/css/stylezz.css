@@ -7,6 +7,10 @@ body {
   font-style: normal;
 }
 
+/* make box sizing predictable so padding/borders don't cause overflow */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
 a{
     color: black;
 }
@@ -72,7 +76,8 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* responsive grid: fit as many columns as possible, but keep a minimum width */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 16px;
 }
 
@@ -81,17 +86,21 @@ nav li {
 }
 
 nav li a {
-    display: block;
+    /* allow multi-line text and keep it visually centered */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
-    height: 40px;
-    line-height: 40px;
+    padding: 8px 12px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: background 0.2s;
     overflow-wrap: break-word;
     text-align: center;
+    white-space: normal;
+    height: auto; /* allow height to grow when text wraps */
 }
 
 nav ul li a:hover
